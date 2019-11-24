@@ -1,0 +1,297 @@
+<html>
+<head>
+  <title></title>
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      }/
+
+    .box {
+      position: relative;
+      left: 500px;
+      width: 600px;
+      height: 370px;
+      margin: 50px auto;
+      overflow: hidden;
+    }
+
+    .box #imgul {
+      width: 600px;
+      height: 370px;
+      left: 200px;
+    }
+
+    .box #imgul li {
+      width: 600px;
+      height: 370px;
+    }
+
+    .box #imgul li img {
+      width: 600px;
+      height: 370px;
+      display: block;
+      float: left;
+    }
+
+    .box span {
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      width: 30px;
+      height: 60px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      font-size: 40px;
+    }
+
+    .box #left {
+      left: 350px;
+      top: 200px;
+    }
+
+    .box #right {
+      left: 920px;
+      top: 200px;
+    }
+
+    .box ol {
+      position: absolute;
+      left: 570px;
+      top: 371px;
+    }
+
+    .box ol li {
+      width: 20px;
+      height: 20px;
+      background: yellow;
+      font-size: 15px;
+      line-height: 20px;
+      float: left;
+      margin: 0px 3px;
+      text-align: center;
+    }
+
+    .box ol .active {
+      background: #fff;
+      color: red;
+    }
+    #lunbo{
+      width: 220px;
+      height: 280px;
+      margin: 50px auto;
+      position: relative;
+      overflow: hidden;
+      top: -400;
+      left: 100;
+      z-index: -1;
+    }
+    .tupian{
+      width: 2500px;
+      height: 280px;
+      position: absolute;
+    }
+    .box1{
+      width: 520px;
+      height: 280px;
+      float: left;
+      text-align: center;
+      font-size: 200px;
+      background-color:#08fd08;
+    }
+    .box2{
+      width: 520px;
+      height: 280px;
+      float: left;
+      text-align: center;
+      font-size: 200px;
+      background-color: blue;
+    }
+    .box3{
+      width: 520px;
+      height: 280px;
+      float: left;
+      text-align: center;
+      font-size: 200px;
+      background-color: yellow;
+    }
+    .box4{
+      width: 520px;
+      height: 280px;
+      float: left;
+      text-align: center;
+      font-size: 200px;
+      background-color: red;
+    }
+    .erdo{
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      margin-left: -30px;
+      border-radius: 5px;
+      width: 60px;
+      height: 21px;
+      background: rgba(225,225,225,7);
+    }
+    .er{
+      float: left;
+      width: 8px;
+      height: 8px;
+      color: #fff;
+      border-radius: 50%;
+      margin: 1px 2px;
+    }
+    .dianji1{
+      height: 77px;
+      width: 20px;
+      position: absolute;
+      left: 0px;
+      top: 37%;
+      background-color: red;
+    }
+    .dianji2{
+      height: 77px;
+      width: 20px;
+      position: absolute;
+      right: 0px;
+      top: 37%;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <p>鼠标离开网页自动轮播</p>
+  <div class='box'>
+    <ul id="imgul" style="margin-left: 350px;">                      
+      <li><img src="1.jpeg" alt=""></li>
+      <li><img src="2.jpeg" alt=""></li>
+      <li><img src="3.jpeg" alt=""></li>
+      <li><img src="4.jpeg" alt=""></li>
+      <li><img src="5.jpeg" alt=""></li>
+    </ul>
+    <span id="left">
+      < </span> <span id="right"> >                
+      </span>    
+      <ol>                                           
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ol>
+      <div id="lunbo">
+        <div class="tupian">
+          <div class="box1">1</div>
+          <div class="box2">2</div>
+          <div class="box3">3</div>
+          <div class="box4">4</div>
+        </div>
+        <div class="erdo">
+          <div class="er">1</div>
+          <div class="er">2</div>
+          <div class="er">3</div>
+          <div class="er">4</div>
+        </div>
+        <button type="button" class="dianji1"></button>
+        <button type="button" class="dianji2"></button>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function $(names) {
+        return document.getElementById(names);
+      }
+    var left = $('left'); //左按钮
+    var right = $('right'); //右按钮
+    var box = document.getElementsByClassName('box')[0];
+    var li_list = document.querySelectorAll('#imgul li'); //获取图片的li
+    var ol_list = document.querySelectorAll('ol li');
+    var timer = null; //声明定时器
+    var count = 0;
+
+    var aaa = document.getElementsByClassName('er');
+    var bbb = document.querySelector('.tupian');
+    var ccc = document.getElementsByClassName('dianji1');
+    ccc.onclick = function(){
+    // body...
+    bbb.style.left = '-520px';
+  }
+  aaa[0].onclick = function(){
+    // body...
+    bbb.style.left = '0';
+  }
+
+  aaa[1].onclick = function(){
+    // body...
+    bbb.style.left = '-520px';
+  }
+
+  aaa[2].onclick = function () {
+    // body...
+    bbb.style.left = '-1040px';
+  }  
+  aaa[3].onclick = function () {
+    // body...
+    bbb.style.left = '-1560px';
+  } 
+
+    function auto() { //执行自动轮播
+      count++;
+      if (count > li_list.length - 1) {
+        count = 0;
+      }
+      for (var i = 0; i < li_list.length; i++) {
+        li_list[i].style = 'display:none;';
+        ol_list[i].className = '';
+      }
+      li_list[count].style = 'display:block;'
+      ol_list[count].className = 'active';
+
+    }
+    timer = setInterval(auto, 500); //调用定时器
+
+    // 点击右侧，切换下一个
+    right.onclick = function () {
+      auto();
+    }
+    // 点击左侧，切换上一个
+    left.onclick = function () {
+      count--;
+      if (count < 0) {
+        count = li_list.length - 1;
+      }
+      console.log(count);
+      for (var i = 0; i < li_list.length; i++) {
+        li_list[i].style = 'display:none;';
+        ol_list[count].className = '';
+      }
+      li_list[count].style = 'display:block;';
+      ol_list[count].className = 'active';
+    }
+
+    box.onmouseover = function () { //鼠标划上去，停止轮播
+      clearInterval(timer);
+    }
+    box.onmouseout = function () { //鼠标划出，继续轮播
+      timer = setInterval(auto, 500); //调用定时器
+    }
+
+
+    //点击小按钮，切换图片
+    for (var j = 0; j < ol_list.length; j++) {
+      ol_list[j].ind = j; //为每个小按钮添加下标
+      ol_list[j].onclick = function () { //进入点击事件
+        for (var i = 0; i < li_list.length; i++) { //干掉所有人
+          li_list[i].style = 'display:none;';
+          ol_list[i].className = '';
+        }
+        li_list[this.ind].style = 'display:block;'; //留下我自己
+        ol_list[this.ind].className = 'active'; //留下我自己
+        count = this.ind; // 把当前的角标值赋值给count 希望他从当前再开始
+      }
+    }
+  </script>
+</body>
+</html>
