@@ -1,297 +1,620 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title></title>
-
+  <meta charset="utf-8">
   <style type="text/css">
-    * {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      }/
-
-    .box {
-      position: relative;
-      left: 500px;
-      width: 600px;
-      height: 370px;
-      margin: 50px auto;
-      overflow: hidden;
+    .box1{  
+      height: 550px;
+      width: 100%;
+      background-color: white;
     }
-
-    .box #imgul {
-      width: 600px;
-      height: 370px;
-      left: 200px;
+    .box2{ 
+      height: 550px;
+      width: 100%;
+      background-color: white;
     }
-
-    .box #imgul li {
-      width: 600px;
-      height: 370px;
-    }
-
-    .box #imgul li img {
-      width: 600px;
-      height: 370px;
-      display: block;
-      float: left;
-    }
-
-    .box span {
-      position: absolute;
-      top: 50%;
-      margin-top: -30px;
-      width: 30px;
-      height: 60px;
-      background-color: rgba(0, 0, 0, 0.6);
-      color: #fff;
-      font-size: 40px;
-    }
-
-    .box #left {
-      left: 350px;
-      top: 200px;
-    }
-
-    .box #right {
-      left: 920px;
-      top: 200px;
-    }
-
-    .box ol {
-      position: absolute;
-      left: 570px;
-      top: 371px;
-    }
-
-    .box ol li {
-      width: 20px;
-      height: 20px;
-      background: yellow;
-      font-size: 15px;
-      line-height: 20px;
-      float: left;
-      margin: 0px 3px;
-      text-align: center;
-    }
-
-    .box ol .active {
-      background: #fff;
-      color: red;
-    }
-    #lunbo{
-      width: 220px;
-      height: 280px;
-      margin: 50px auto;
-      position: relative;
-      overflow: hidden;
-      top: -400;
-      left: 100;
-      z-index: -1;
-    }
-    .tupian{
-      width: 2500px;
-      height: 280px;
+    .box3{ 
+      height: 550px;
+      width: 100%;
+      background-color: red;
       position: absolute;
     }
-    .box1{
-      width: 520px;
-      height: 280px;
-      float: left;
-      text-align: center;
-      font-size: 200px;
-      background-color:#08fd08;
+    .box4{ 
+      height: 550px;
+      width: 100%;
+      background-color: white;
+      position: absolute;
     }
-    .box2{
-      width: 520px;
-      height: 280px;
-      float: left;
-      text-align: center;
-      font-size: 200px;
+    .box10{ 
+      height: 550px;
+      width: 100%;
       background-color: blue;
     }
-    .box3{
-      width: 520px;
-      height: 280px;
-      float: left;
-      text-align: center;
-      font-size: 200px;
+    .box11{ 
+      height: 550px;
+      width: 100%;
+      background-color: red;
+
+    }
+    .box6{ 
+      height: 550px;
+      width: 100%;
+      background-color: #f1f1f1;
+    }
+    .box7{ 
+      height: 110px;
+      width: 100%;
       background-color: yellow;
+      background: url(100.png) no-repeat;
+       background-size: 100%;
+   
     }
-    .box4{
-      width: 520px;
-      height: 280px;
-      float: left;
-      text-align: center;
-      font-size: 200px;
-      background-color: red;
+    .box1-you{
+      height: 550px;
+      width: 75%;
+      background: url(1.png) no-repeat;
+      background-size: 100%;/*自动适应div大小*/
+      float: right;
     }
-    .erdo{
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      margin-left: -30px;
-      border-radius: 5px;
-      width: 60px;
-      height: 21px;
-      background: rgba(225,225,225,7);
-    }
-    .er{
-      float: left;
-      width: 8px;
-      height: 8px;
-      color: #fff;
-      border-radius: 50%;
-      margin: 1px 2px;
-    }
-    .dianji1{
-      height: 77px;
-      width: 20px;
-      position: absolute;
-      left: 0px;
-      top: 37%;
-      background-color: red;
-    }
-    .dianji2{
-      height: 77px;
-      width: 20px;
-      position: absolute;
-      right: 0px;
-      top: 37%;
-      background-color: red;
-    }
-  </style>
+    .box1-1{ 
+     height: 45px;
+     width: 44px;
+     background: url(3.png) repeat-x;
+     background-size: cover;
+     position: absolute;
+     top: 24%;
+     left: 12%;
+}
+.nav{
+ height: 22px;
+    width: 301px;
+    background-color: white;
+    position: absolute;
+    right: 291px;
+
+
+}
+   
+   .box1-2{
+    height: 20px;
+    width: 80px;
+    background: url(2.png) repeat-x;
+    background-size: cover;
+    position: absolute;
+    top: 12px;
+    left: 179px;
+  }
+  .wusi{
+    font-size: 50px;
+    font-family: "WenYue";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    position: absolute;
+    left: 18%;
+    top: 14%;
+    z-index: 25;
+  }
+  .STAY_ {
+    font-size: 50px;
+    font-family: "vtksstudy";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    position: absolute;
+    left: 18%;
+    top: 23%;
+    z-index: 18;
+  }
+  .YOUNG {
+    font-size: 50px;
+    font-family: "vtksstudy";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    position: absolute;
+    left: 13%;
+    top: 31%;
+    z-index: 19;
+  }
+  .FOERVER {
+    font-size: 50px;
+    font-family: "vtksstudy";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    position: absolute;
+    left: 18%;
+    top: 39%;
+    z-index: 20;
+  }
+  .box2-right{
+    height: 550px;
+    width: 500px;
+    float:left;
+    background-color: #b71414; 
+  }
+  .box2-left{
+   height: 445px;
+   width: 838px;
+   position: absolute;
+   left: 582px;
+   top: 571px;
+   background-color: white;
+
+ }
+ .box2-youxia{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 351px;
+  left: 283px;
+
+}
+.qizi1{
+  height: 187px;
+  width: 710px;
+  background: url(4.png) no-repeat;
+  background-size: 6%;
+  position: absolute;
+  top: 20px;
+  left: -34px;
+}
+.qizi2{
+  height: 187px;
+  width: 710px;
+  background: url(4.png) no-repeat;
+  background-size: 6%;
+  position: absolute;
+  top: 364px;
+  left: 210px;
+}
+.box2-right ul{
+  display: table;
+  color: white;
+  position: absolute;
+  font-size: 15px;
+  position: absolute;
+  left: 95.324px;
+  top: 714.457px;
+}
+.passion{
+  font-size: 92px;
+  font-family: "vtksstudy";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  position: absolute;
+  left: 411.324px;
+  top: 873.457px;
+  z-index: 42;
+}
+.wushirp{
+  font-size: 60px;
+  font-family: "SentyGoldenBell";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  position: absolute;
+  left: 111.809px;
+  top: 615.62px;
+  z-index: 53;
+}
+.box3-left{
+  height: 550px;
+  width: 25%;
+  background-color: #f1f1f1;
+
+}
+.box3-zhong{
+  
+}
+.box3-zhong-shiping{
+  height: 356px;
+    width: 1024px;
+    background: url(5.png) no-repeat;
+    background-size: 6%;
+    position: absolute;
+    top: 98px;
+    left: 227px;
+    background-size: 100%;
+    z-index: 1;
+}
+.box3-right{
+ height: 550px;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: absolute;
+    left: 1125px;
+    top: 0px;
+}
+.box3-wusisuying{
+  font-size: 46px;
+    font-family: "SentyGoldenBell";
+    color: rgb(0, 0, 0);
+    line-height: 12.2;
+    position: absolute;
+    left: -182.918px;
+    top: 68.801px;
+    z-index: 104;
+    writing-mode: tb-rl;
+}
+.kailong1{
+  width: 249px;
+    height: 39px;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid red;
+    -webkit-transform: rotate(154deg);
+    position: absolute;
+    top: 473px;
+    right: -78px;
+}
+.kailong2{
+  width: 249px;
+    height: 39px;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid red;
+    -webkit-transform: rotate(-48deg);
+    position: absolute;
+    top: 56px;
+    left: -185px;
+}
+.Draem {
+  font-size: 41px;
+    font-family: "vtksstudy";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    position: absolute;
+    left: 149.082px;
+    top: 469.801px;
+    z-index: 96;
+}
+.box4-wusipingyou {
+  font-size: 46px;
+    font-family: "SentyGoldenBell";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    position: absolute;
+    left: 606px;
+    top: 16px;
+    z-index: 125;
+}
+.box4-tu1{
+     height: 356px;
+    width: 802px;
+    background: url(11.png) no-repeat;
+    background-size: 6%;
+    position: absolute;
+    top: 98px;
+    left: 213px;
+    float: left;
+    background-size: 14%;
+    z-index: 1;
+
+}
+.box4-tu2{
+ height: 356px;
+    width: 802px;
+    background: url(12.png) no-repeat;
+    background-size: 6%;
+    position: absolute;
+    top: 98px;
+    left: 428px;
+    float: left;
+    background-size: 14%;
+    z-index: 1;
+
+}
+
+.box4-tu3{
+ height: 356px;
+    width: 802px;
+    background: url(13.png) no-repeat;
+    background-size: 6%;
+    position: absolute;
+    top: 98px;
+    left: 642px;
+    float: left;
+    background-size: 14%;
+    z-index: 1;
+}
+
+
+.box4-tu4{
+ height: 356px;
+    width: 802px;
+    background: url(14.png) no-repeat;
+    background-size: 6%;
+    position: absolute;
+    top: 98px;
+    left: 866px;
+    float: left;
+    background-size: 14%;
+    z-index: 1;
+}
+
+.box4-tu5{
+height: 356px;
+    width: 802px;
+    background: url(15.png) no-repeat;
+    background-size: 6%;
+    position: absolute;
+    top: 98px;
+    left: 1080px;
+    float: left;
+    background-size: 14%;
+    z-index: 1;
+}
+.mingzi{
+height: 87px;
+    width: 800px;
+    background: url(20.png) no-repeat;
+    background-size: 6%;
+    position: absolute;
+    top: 178px;
+    left: -6px;
+    float: left;
+    background-size: 16%;
+    z-index: 1;
+  }
+  .creative {
+  font-size: 48px;
+    font-family: "vtksstudy";
+    color: rgba(0, 0, 0, 0.702);
+    line-height: 1.2;
+    -moz-transform: matrix( 4.45860296218474,0,0,4.45860296218474,0,0);
+    -webkit-transform: matrix( 4.45860296218474,0,0,4.45860296218474,0,0);
+    -ms-transform: matrix( 4.45860296218474,0,0,4.45860296218474,0,0);
+    position: absolute;
+    left: 563px;
+    top: 371px;
+    z-index: 124;
+}
+.box6-box1{
+height: 170px;
+    width: 800px;
+    background: url(61.png) no-repeat;
+    background-size: 6%;
+    position: absolute;
+    top: 2294px;
+    left: 158px;
+    float: left;
+    background-size: 33%;
+    z-index: 1;
+}
+.box6-box2{
+height: 170px;
+    width: 800px;
+    background: url(61.png) no-repeat;
+    background-size: 6%;
+    position: absolute;
+    top: 2294px;
+    left: 587px;
+    float: left;
+    background-size: 33%;
+    z-index: 6;
+}
+.box6-box3{
+height: 170px;
+    width: 800px;
+    background: url(61.png) no-repeat;
+    background-size: 6%;
+    position: absolute;
+    top: 2294px;
+    left: 1021px;
+    float: left;
+    background-size: 33%;
+    z-index: 1;
+}
+.box6-box4{
+height: 170px;
+    width: 800px;
+    background: url(61.png) no-repeat;
+    background-size: 6%;
+    position: absolute;
+    top: 2530px;
+    left: 229px;
+    float: left;
+    background-size: 33%;
+    z-index: 0;
+}
+.box6-box5{
+height: 170px;
+    width: 800px;
+    background: url(61.png) no-repeat;
+    background-size: 6%;
+    position: absolute;
+    top: 2530px;
+    left: 654px;
+    float: left;
+    background-size: 33%;
+    z-index: 1;
+}
+.box6-box6{
+height: 170px;
+    width: 800px;
+    background: url(61.png) no-repeat;
+    background-size: 6%;
+    position: absolute;
+    top: 2530px;
+    left: 1086px;
+    float: left;
+    background-size: 33%;
+}
+.box6-box7{
+height: 170px;
+    width: 800px;
+    background: url(61.png) no-repeat;
+    background-size: 6%;
+    position: absolute;
+    top: 2530px;
+    left: 227px;
+    float: left;
+    background-size: 33%;
+}
+
+.box6-red1{
+  height: 200px;
+    width: 288px;
+    background-color: red;
+    position: absolute;
+    left: -314px;
+    top: -84px;
+}
+.box6-red2{
+ height: 381px;
+    width: 450px;
+    background-color: red;
+    position: absolute;
+    left: 39px;
+    top: -153px;
+    z-index: -1;
+}
+.box6-red3{
+height: 122px;
+    width: 119px;
+    background-color: red;
+    position: absolute;
+    left: 1231px;
+    top: 2635px;
+    z-index: 1;
+}
+.box6-wusi{
+  font-size: 44px;
+    font-family: "SentyGoldenBell";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    position: absolute;
+    left: 145.719px;
+    top: 2219.644px;
+    z-index: 197;
+}
+.box6-jiu{
+  height: 200px;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: absolute;
+    right: 79px;
+}
+.box6-box8{
+height: 170px;
+    width: 800px;
+    background: url(61.png) no-repeat;
+    background-size: 6%;
+    position: absolute;
+    top: 2530px;
+    left: 1086px;
+    float: left;
+    background-size: 33%;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+</style>
 </head>
 <body>
-  <p>鼠标离开网页自动轮播</p>
-  <div class='box'>
-    <ul id="imgul" style="margin-left: 350px;">                      
-      <li><img src="1.jpeg" alt=""></li>
-      <li><img src="2.jpeg" alt=""></li>
-      <li><img src="3.jpeg" alt=""></li>
-      <li><img src="4.jpeg" alt=""></li>
-      <li><img src="5.jpeg" alt=""></li>
-    </ul>
-    <span id="left">
-      < </span> <span id="right"> >                
-      </span>    
-      <ol>                                           
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-      </ol>
-      <div id="lunbo">
-        <div class="tupian">
-          <div class="box1">1</div>
-          <div class="box2">2</div>
-          <div class="box3">3</div>
-          <div class="box4">4</div>
-        </div>
-        <div class="erdo">
-          <div class="er">1</div>
-          <div class="er">2</div>
-          <div class="er">3</div>
-          <div class="er">4</div>
-        </div>
-        <button type="button" class="dianji1"></button>
-        <button type="button" class="dianji2"></button>
+  <div class="box1">
+    <div class="box1-you">
+      <div class="wusi">五四青年节</div>
+      <div class="STAY_ ">STAY_ </div>
+      <div class="YOUNG ">YOUNG </div>
+      <div class="FOERVER">FOERVER</div>
+    </div>
+    <div class="box1-1"></div>
+    <div class="box1-2"></div>
+    <div class="nav">首页&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp新闻&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp资讯&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp产品&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp投稿</div>
+  </div>
+  <div class="box2">
+    <div class="box2-right">
+      <ul>
+        <li>我们将永远青春</li><br>
+        <li>时光不老，我们不散</li><br>
+        <li>做新时代的接班人</li><br>
+        <li>从今天，明天早起</li><br>
+        <li>我们将永远青春</li><br>
+        <li>时光不老，我们不散</li><br>
+        <li>做新时代的接班人</li>
+      </ul>
+      <div class="wushirp">五四热评</div>
+    </div>
+    <div class="box2-left">
+      <h5>&nbsp&nbsp&nbsp&nbsp&nbsp燃烧无悔青春，传递“五四”火炬</h5>
+      <p>&nbsp&nbsp&nbsp&nbsp&nbsp五月这是个鲜花绚烂的事节，空气中四滋的花香， 合着春韵、伴莉夏律，当和康的春风吹遍亚洲大地之时，我们迎来了“五四”运动九十周年，今天的中国繁荣昌盛，屹立在世界民族之林，但是我们不能忘记90年前那些曾经为中华民族的民主、独立而抛头颅酒热血的青年们。是他们，在民族遭受屈学的时到挺身而出，用自己的青春在中国历史上遭写出一幅辉煌杜葛的简章，也许历更已遣店了他们中大多数人的名字，但是他们燃烧青春，凝聚鲜血换来的精神火炬，点亮了未来:他们所倡导的"爱国、进步、民主。科学”的五四精神，也被一 代又代青年所传颂、发肠。<br>
+
+        &nbsp&nbsp&nbsp&nbsp&nbsp今天，年轻的我们是幸运的一--我们沐浴看党的光辉 ，享受蓄祥和、安宁的幸福生活，可是作为新世纪的青年，我们引领着时代的前沿，把整套民族的未案，当五四的火种传递到我们手中之时找们该怎样才能无德时代的要求，无愧”五四”精神?<br>
+
+        &nbsp&nbsp“五四“精神的本质是爱国主义，是一件为了民族暖兴而不断追求理想，追求真理的精神↓是种为国家兴旺而不断追求科学、追求民主的精神，是种为祖国繁荣而勇于创新、知难而进的精明， 它不仅是五四青年智慧和力量的结品，更是中国青年理想和目标的体现。今天，新时代要求我们在继承和发场五四精神的同时，也要与时保进，为其注入时代的特点.注入断的内涵。这就變来我们具有科学发展观的思期，用科学的理论来武满头脑↓用发展的脸光看待问题。
+      </p>
+      <div class="qizi1"></div>
+      <div class="qizi2"></div>
+      <div class="box2-youxia">
+        <h5>坚持科学发展观做新时代接班人</h5>
+        <p>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
       </div>
     </div>
-
-    <script type="text/javascript">
-      function $(names) {
-        return document.getElementById(names);
-      }
-    var left = $('left'); //左按钮
-    var right = $('right'); //右按钮
-    var box = document.getElementsByClassName('box')[0];
-    var li_list = document.querySelectorAll('#imgul li'); //获取图片的li
-    var ol_list = document.querySelectorAll('ol li');
-    var timer = null; //声明定时器
-    var count = 0;
-
-    var aaa = document.getElementsByClassName('er');
-    var bbb = document.querySelector('.tupian');
-    var ccc = document.getElementsByClassName('dianji1');
-    ccc.onclick = function(){
-    // body...
-    bbb.style.left = '-520px';
-  }
-  aaa[0].onclick = function(){
-    // body...
-    bbb.style.left = '0';
-  }
-
-  aaa[1].onclick = function(){
-    // body...
-    bbb.style.left = '-520px';
-  }
-
-  aaa[2].onclick = function () {
-    // body...
-    bbb.style.left = '-1040px';
-  }  
-  aaa[3].onclick = function () {
-    // body...
-    bbb.style.left = '-1560px';
-  } 
-
-    function auto() { //执行自动轮播
-      count++;
-      if (count > li_list.length - 1) {
-        count = 0;
-      }
-      for (var i = 0; i < li_list.length; i++) {
-        li_list[i].style = 'display:none;';
-        ol_list[i].className = '';
-      }
-      li_list[count].style = 'display:block;'
-      ol_list[count].className = 'active';
-
-    }
-    timer = setInterval(auto, 500); //调用定时器
-
-    // 点击右侧，切换下一个
-    right.onclick = function () {
-      auto();
-    }
-    // 点击左侧，切换上一个
-    left.onclick = function () {
-      count--;
-      if (count < 0) {
-        count = li_list.length - 1;
-      }
-      console.log(count);
-      for (var i = 0; i < li_list.length; i++) {
-        li_list[i].style = 'display:none;';
-        ol_list[count].className = '';
-      }
-      li_list[count].style = 'display:block;';
-      ol_list[count].className = 'active';
-    }
-
-    box.onmouseover = function () { //鼠标划上去，停止轮播
-      clearInterval(timer);
-    }
-    box.onmouseout = function () { //鼠标划出，继续轮播
-      timer = setInterval(auto, 500); //调用定时器
-    }
+    <div class="passion">passion</div>
+  </div>
+  <div class="box3">
+    <div class="box3-left">
+      <div class="box3-wusisuying">五四溯影</div>
+      <div class="Draem ">Draem</div>
+    </div>
+    <div class="box3-zhong">
+      <div class="box3-zhong-shiping"></div>
+    </div>
+    <div class="box3-right"></div>
 
 
-    //点击小按钮，切换图片
-    for (var j = 0; j < ol_list.length; j++) {
-      ol_list[j].ind = j; //为每个小按钮添加下标
-      ol_list[j].onclick = function () { //进入点击事件
-        for (var i = 0; i < li_list.length; i++) { //干掉所有人
-          li_list[i].style = 'display:none;';
-          ol_list[i].className = '';
-        }
-        li_list[this.ind].style = 'display:block;'; //留下我自己
-        ol_list[this.ind].className = 'active'; //留下我自己
-        count = this.ind; // 把当前的角标值赋值给count 希望他从当前再开始
-      }
-    }
-  </script>
+  </div>
+  <div class="box10"></div>  
+  <div class="box4">
+    <div class="box4-wusipingyou">五四评优</div>
+    <div class="box4-tu1">
+      <div class="mingzi"></div>
+    </div>
+    <div class="box4-tu2">
+      <div class="mingzi"></div>
+    </div>
+    <div class="box4-tu3">
+      <div class="mingzi"></div>
+    </div>
+    <div class="box4-tu4">
+      <div class="mingzi"></div>
+    </div>
+    <div class="box4-tu5">
+      <div class="mingzi"></div>
+    </div>
+
+    <div class="creative">creative</div>
+     <div class="kailong1"></div>
+     <div class="kailong2"></div>
+
+
+  </div>
+  <div class="box11"></div>
+  <div class="box6">
+    <div class="box6-box1"></div>
+    <div class="box6-box2"></div>
+    <div class="box6-box3">
+       <div class="box6-red1"></div>
+    </div>
+    <div class="box6-box4">
+      <div class="box6-red2"></div>
+    </div>
+
+    <div class="box6-box5"></div>
+    <div class="box6-box6">
+    </div>
+
+    <div class="box6-box7"></div>
+    <div class="box6-box8"></div>
+    <div class="box6-red3"></div>
+    <div class="box6-wusi">湘大五四展</div>
+    
+    <div class="box6-jiu"></div>
+  </div>
+  <div class="box7"></div>
 </body>
 </html>
